@@ -1,0 +1,178 @@
+body {
+    background: #111;
+}
+h1 {
+    text-align: center;
+    color: #ccc;
+    font-size: 3rem;
+    font-family: IBM Plex Mono, monospace;
+}
+
+h2 {
+    font-family: IBM Plex Mono, monospace;
+    color: white;
+    font-size: 1rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-top: 5.5rem;
+}
+
+.wrapper-elements {
+    display: grid;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.box-container {
+    border: 1px solid #333;
+    width: 150px;
+    height: 100px;
+    padding: 5px;
+    box-sizing: border-box;
+    gap: 3px;
+}
+
+.box-item {
+    border-radius: 1px;
+    height: 10px;
+    width: 33px;
+    align-content: start;
+    justify-content: start;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    background: #aa88ff;
+}
+
+.box-medium {
+    width: 23px;
+}
+
+.box-small {
+    width: 7px;
+}
+
+/* Estilo para divs 1, 4 e 7 */
+.align-stretch div:nth-child(3n-2) {
+    height: 25px;
+    width: 33px;
+}
+
+/* Estilo para divs 2, 5 e 8 */
+.align-stretch div:nth-child(3n-1) {
+    height: 25px;
+    width: 13px;
+}
+
+/* Estilo para divs 3, 6 e 9 */
+.align-stretch div:nth-child(3n) {
+    height: 25px;
+    width: 7px;
+}
+
+/* Estilo para divs 1, 4 e 7 */
+.justify-stretch div:nth-child(3n-2) {
+    height: 10px;
+    width: 53px;
+}
+
+/* Estilo para divs 2, 5 e 8 */
+.justify-stretch div:nth-child(3n-1) {
+    height: 10px;
+    width: 43px;
+}
+
+/* Estilo para divs 3, 6 e 9 */
+.justify-stretch div:nth-child(3n) {
+    height: 10px;
+    width: 33px;
+}
+
+/* justify positions  */
+
+.align-start {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-content: start;
+    justify-content: start;
+}
+.align-center {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-content: center;
+    justify-content: start;
+}
+.align-end {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: start;
+    align-content: end;
+}
+.align-stretch {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: start;
+    align-content: stretch;
+}
+.align-between {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: start;
+    align-content: space-between;
+}
+.align-around {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: start;
+    align-content: space-around;
+}
+.align-evenly {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: start;
+    align-content: space-evenly;
+}
+/* Justify positions */
+.justify-start {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-content: start;
+    justify-content: start;
+}
+.justify-center {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-content: start;
+    justify-content: center;
+}
+.justify-end {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-content: start;
+    justify-content: end;
+}
+.justify-stretch {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-content: start;
+    justify-content: stretch;
+}
+.justify-between {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-between;
+    align-content: start;
+}
+.justify-around {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-around;
+    align-content: start;
+}
+.justify-evenly {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-content: start;
+    justify-content: space-evenly;
+}
